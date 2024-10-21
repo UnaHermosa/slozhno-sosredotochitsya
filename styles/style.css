@@ -1,3 +1,8 @@
+.page {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
 .content-section {
   padding-inline-start: var(--page-padding);
   padding-inline-end: var(--page-padding);
@@ -92,6 +97,24 @@
 .header__text {
   font-weight: 700;
   word-spacing: 0.21em;
+}
+
+.title-decor {
   color: var(--bg-color);
   background-color: var(--accent-color);
+}
+
+.title {
+  color: var(--accent-color);
+  font-size: var(--main-fontsize);
+  line-height: 1.3em;
+  word-spacing: 0.85em;
+}
+
+.reasons {
+  padding-block-start: 40px;
+}
+
+.reasons__title {
+  margin-bottom: var(--margin-bottom);
 }
