@@ -1,10 +1,20 @@
 :root {
+  /*Ширины экранов*/
+
+  --min-width: 375px;
+  --tablet-width: 768px;
+  --desktop-width: 1024px;
+  --max-width: 1440px;
+
+  /*Цвета*/
+
   --bg-color: #000028;
   --accent-color: #ff0070;
   --title-color: #db00ff;
   --text-color: #f1b2ce;
   --main-fontsize: 18px;
 
+  /*Размеры отступов*/
   --page-padding: 10px;
   --margin-bottom: 20px;
 }

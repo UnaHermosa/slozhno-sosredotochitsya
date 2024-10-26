@@ -48,7 +48,7 @@
   position: relative;
   margin-inline-start: auto;
   padding-inline-end: 28px;
-  line-height: 1.38em;
+  line-height: 1.45em;
   text-transform: uppercase;
   color: var(--accent-color);
 }
@@ -66,28 +66,30 @@
 }
 
 .header__theme-menu {
-  padding-block-start: 75px;
+  padding-block-start: 39px;
 }
 
 .header__theme-menu-list {
   display: grid;
   justify-content: end;
-  gap: var(--page-padding);
+  gap: 16px;
   margin: 0;
   padding: 0;
-  padding-block-end: 65px;
+  padding-block-end: 77px;
   list-style: none;
   color: var(--accent-color);
 }
 
 .header__theme-menu-button {
-  padding: 0;
+  padding: 0 13px;
   background-color: transparent;
+  text-transform: lowercase;
   border: none;
 }
 
 .header__title {
-  margin-block-end: 55px;
+  margin-block-end: 50px;
+  font-family: inherit;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
   color: var(--title-color);
@@ -96,7 +98,7 @@
 
 .header__text {
   font-weight: 700;
-  word-spacing: 0.21em;
+  line-height: 1.28em;
 }
 
 .title-decor {
