@@ -1,16 +1,13 @@
 :root.theme_light {
   --background-image: url(../images/cover-image-light.png);
-
   --bg-color: #fff1f7;
   --accent-color: #ffc2e6;
   --title-color: var(--accent-color);
   --text-color: #353430;
-  --menu-shadow: rgb(50, 49, 45, 0.4);  
-
+  --menu-shadow: rgb(50, 49, 45, 0.4);
   --title-decor-color: var(--bg-color);
   --heading-color: var(--accent-color);
-  --menu-item-color: var(var(--accent-color));
-
+  --menu-item-color: var(--accent-color);
   --shadow: #ff0070;
 }
 
@@ -20,42 +17,36 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-image: url(../images/cover-image-light.png);
-
   --bg-color: #fff1f7;
   --accent-color: #ffc2e6;
   --title-color: var(--accent-color);
   --text-color: #353430;
   --menu-shadow: rgb(50, 49, 45, 0.4);
-
   --title-decor-color: var(--text-color);
   --heading-color: var(--text-color);
   --menu-item-color: var(--text-color);
-
   --shadow: #ff0070;
-  
-  & .header-decor {
-    display: none;
-  }
+}
+
+.page.theme_light .header-decor {
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --background-image: url(../images/cover-image-light.png);
-
     --bg-color: #fff1f7;
     --accent-color: #ffc2e6;
     --title-color: var(--accent-color);
     --text-color: #353430;
     --menu-shadow: rgb(50, 49, 45, 0.4);
-  
     --title-decor-color: var(--text-color);
     --heading-color: var(--text-color);
     --menu-item-color: var(--text-color);
-  
     --shadow: #ff0070;
   }
 
-  .header-decor {
+  .page.theme_light .header-decor {
     display: none;
   }
 }
