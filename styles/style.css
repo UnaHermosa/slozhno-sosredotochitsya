@@ -1,6 +1,12 @@
 .page {
+  position: relative;
   background-color: var(--bg-color, #000028);
   color: var(--text-color, #f1b2ce);
+  background-image: var(--background-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .content-section {
@@ -14,14 +20,14 @@
 }
 
 .title {
-  color: var(--accent-color, #ff0070);
+  color: var(--heading-color, #ff0070);
   font-size: var(--main-fontsize);
   font-weight: 700;
   line-height: 1.3em;
 }
 
 .title-decor {
-  color: var(--bg-color, #000028);
+  color: var(--title-decor-color, #000028);
   background-color: var(--accent-color, #ff0070);
   line-height: 1.3em;
   font-weight: 400;
@@ -30,7 +36,7 @@
 .text-accent {
   text-decoration: none;
   border: 1px solid transparent;
-  text-shadow: 3px 2px 0 var(--accent-color, #ff0070);
+  text-shadow: 3px 2px 0 var(--shadow);
 }
 
 .text-accent:focus {
@@ -69,8 +75,8 @@
   right: 10px;
   width: 25px;
   height: 25px;
-  border-inline-end: 1px solid var(--accent-color, #ff0070);
-  border-block-start: 1px solid var(--accent-color, #ff0070);
+  border-inline-end: 1px solid var(--menu-item-color, #ff0070);
+  border-block-start: 1px solid var(--menu-item-color, #ff0070);
 }
 
 @media (min-width: 768px) {
@@ -87,8 +93,8 @@
   left: 10px;
   height: 25px;
   width: 25px;
-  border-inline-start: 1px solid var(--accent-color, #ff0070);
-  border-block-end: 1px solid var(--accent-color, #ff0070);
+  border-inline-start: 1px solid var(--menu-item-color, #ff0070);
+  border-block-end: 1px solid var(--menu-item-color, #ff0070);
 }
 
 @media (min-width: 768px) {
@@ -156,7 +162,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  color: var(--accent-color, #ff0070);
 }
 
 @media (min-width: 1024px) {
@@ -166,17 +171,21 @@
   }
 }
 
+.header__theme-menu-item {
+  color: var(--menu-item--color, #ff0070);
+}
+
 .header__theme-menu-button {
   padding: 0 13px;
   line-height: 135%;
   background-color: transparent;
-  color: var(--accent-color, #ff0070);
+  color: var(--menu-item-color, #ff0070);
   text-transform: lowercase;
   border: 1px solid transparent;
 }
 
 .header__theme-menu-button_active {
-  border-color: var(--accent-color, #ff0070);
+  border-color: var(--menu-item-color, #ff0070);
   pointer-events: none
 }
 
@@ -189,7 +198,7 @@
 }
 
 .header__theme-menu-button:hover {
- border: 1px solid rgba(255, 0, 112, 0.4);
+ border-color: var(--menu-shadow);
 }
 
 .header__title {
@@ -198,7 +207,7 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
   color: var(--title-color, #db00ff);
-  text-shadow: 4px 4px 0 #ff0070;
+  text-shadow: 4px 4px 0 var(--shadow, #ff0070);
 }
 
 @media (min-width: 768px) {
@@ -218,7 +227,6 @@
 .header__text {
   font-weight: 700;
   line-height: 1.28em;
-  color: var(--bg-color, #000028);
 }
 
 @media (min-width: 768px) {
@@ -258,7 +266,6 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 1.3em;
-  color: currentColor;
 }
 
 .list__item-text {
@@ -414,7 +421,7 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
   color: var(--title-color, #db00ff);
-  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
+  text-shadow: 2px 2px 0 var(--shadow, #ff0070);
   text-align: center;
 }
 

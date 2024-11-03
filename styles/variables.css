@@ -6,12 +6,23 @@
   --desktop-width: 1024px;
   --max-width: 1440px;
 
+  /*Фоновое изображение*/
+
+  --background-image: url(../images/cover-image-dark.png);
+
   /*Цвета*/
 
   --bg-color: #000028;
   --accent-color: #ff0070;
   --title-color: #db00ff;
   --text-color: #f1b2ce;
+  --menu-shadow: rgba(255, 0, 112, 0.4);
+
+  --title-decor-color: var(--bg-color);
+  --heading-color: var(--accent-color);
+  --menu-item-color: var(--accent-color);
+
+  --shadow: #ff0070;
 
   /*Переменные для шрифта*/
 
