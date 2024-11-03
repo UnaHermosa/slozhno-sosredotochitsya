@@ -6,13 +6,21 @@
   box-sizing: border-box;
 }
 
-body {
+.page {
+  position: relative;
   min-inline-size: var(--min-width);
   max-inline-size: var(--max-width);
   margin: 0 auto;
   font-family: 'IBM Plex mono', monospace;
   font-size: var(--main-fontsize);
   font-weight: 400;
+  color: var(--text-color, #f1b2ce);
+  background-color: var(--bg-color, #000028);
+  background-image: var(--background-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 h1,

@@ -22,14 +22,17 @@
   --heading-color: var(--accent-color);
   --menu-item-color: var(--accent-color);
 
-  --shadow: #ff0070;
-
   /*Переменные для шрифта*/
 
   --main-fontsize: 18px;
 
-  /*Размеры отступов*/
-  --indent-1: 10px;
-  --indent-2: 20px;
-  --indent-5: 50px;
+  /*Размер заголовка*/
+
+  --logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
