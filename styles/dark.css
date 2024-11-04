@@ -15,6 +15,10 @@
   --menu-item-color: var(--accent-color);
 }
 
+.page.theme_dark .header-decor {
+  display: block;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background-image: url(../images/cover-image-dark.png);
@@ -28,5 +32,9 @@
      --heading-color: var(--accent-color);
      --menu-item-color: var(--accent-color);
      --shadow: #ff0070;
+  }
+
+  .header-decor {
+    display: block;
   }
 }
